@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Shekhar | Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="fixed top-0 w-full z-50 p-8 flex justify-between items-center backdrop-blur-md border-b border-white/5">
+        <div class="text-2xl font-black tracking-tighter uppercase cursor-pointer">
+            <span class="text-blue-500">H</span>.SHEKHAR
+        </div>
+        <div class="hidden md:flex gap-12 text-[10px] font-bold uppercase tracking-[0.3em] opacity-50">
+            <a href="#hero" class="nav-link hover:text-white">Home</a>
+            <a href="#about" class="nav-link hover:text-white">About</a>
+            <a href="#skills" class="nav-link hover:text-white">Skills</a>
+            <a href="#education" class="nav-link hover:text-white">Education</a>
+            <a href="#projects" class="nav-link hover:text-white">Lab</a>
+            <a href="#contact" class="nav-link hover:text-white">Contact</a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="space-y-8">
+            <div class="inline-block py-2 px-4 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold tracking-[0.2em] uppercase reveal-text">
+                Information Technology Student
+            </div>
+            <h1 class="text-7xl md:text-[10rem] font-extrabold tracking-tighter leading-[0.8] reveal-text">
+                Himanshu <br><span class="text-gradient">Shekhar</span>
+            </h1>
+            <p class="text-xl md:text-3xl opacity-40 max-w-3xl reveal-text leading-relaxed font-light italic">
+                Engineering intelligent software ecosystems through <span class="text-white">Generative AI</span>, 
+                <span class="text-white">C++</span>, and performance-driven architectures.
+            </p>
+            <div class="flex gap-6 pt-8 reveal-text">
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white px-12 py-5 rounded-full font-bold transition-all shadow-2xl shadow-blue-600/30">Enter Lab</a>
+                <a href="#about" class="border border-white/10 hover:bg-white/5 px-12 py-5 rounded-full font-bold transition-all">View Background</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="glass-card p-12 space-y-8">
+                <h3 class="text-4xl font-black uppercase tracking-tight">Summary</h3>
+                <p class="text-lg opacity-60 leading-relaxed font-light">
+                    Results-oriented B.Tech IT student at CGC Landran with a strong foundation in <span class="text-white">C++, Data Structures</span>, and <span class="text-white">Web Development</span>. 
+                </p>
+                <p class="text-lg opacity-60 leading-relaxed font-light">
+                    Proven leadership experience as a PR & Sponsorship member of the <span class="text-blue-400">'Tech Amigos'</span> club.
+                </p>
+                <div class="flex gap-3 flex-wrap">
+                    <span class="badge">Google GenAI Certified</span>
+                    <span class="badge">AWS GenAI Foundations</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="glass-card p-8 text-center">
+                    <h4 class="text-3xl font-black mb-2 italic">IT</h4>
+                    <p class="text-[10px] uppercase opacity-40 font-bold tracking-widest">Major Domain</p>
+                </div>
+                <div class="glass-card p-8 text-center">
+                    <h4 class="text-3xl font-black mb-2 italic">C++</h4>
+                    <p class="text-[10px] uppercase opacity-40 font-bold tracking-widest">Core Language</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="mb-16">
+            <h3 class="text-5xl font-black tracking-tight uppercase">Skills & <span class="text-blue-500">Milestones</span></h3>
+            <p class="opacity-40 mt-4 uppercase tracking-[0.2em] text-xs font-bold">Expertise | Certifications | Languages</p>
+        </div>
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+            <div class="glass-card p-10 space-y-8 flex flex-col">
+                <h4 class="text-xl font-black uppercase tracking-widest text-blue-400">Technical</h4>
+                <div class="space-y-6 flex-grow">
+                    <div class="space-y-2">
+                        <p class="text-[10px] font-bold uppercase opacity-40 tracking-widest">Core & Web</p>
+                        <p class="text-sm font-medium">C, C++, HTML, CSS, JavaScript, Data Structures</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-[10px] font-bold uppercase opacity-40 tracking-widest">AI & Backend</p>
+                        <p class="text-sm font-medium">Python, Generative AI, LLM Integration</p>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-white/5"><i class="fas fa-microchip text-3xl opacity-20"></i></div>
+            </div>
+            <div class="glass-card p-10 space-y-8 flex flex-col">
+                <h4 class="text-xl font-black uppercase tracking-widest text-purple-400">Interpersonal</h4>
+                <div class="space-y-6 flex-grow">
+                    <div class="space-y-2">
+                        <p class="text-[10px] font-bold uppercase opacity-40 tracking-widest">Leadership</p>
+                        <p class="text-sm font-medium">Public Relations, Event Coordination, Sponsorship</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-[10px] font-bold uppercase opacity-40 tracking-widest">Cognitive</p>
+                        <p class="text-sm font-medium">Analytical Thinking, Strategic Communication</p>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-white/5"><i class="fas fa-brain text-3xl opacity-20"></i></div>
+            </div>
+            <div class="glass-card p-10 space-y-8 flex flex-col">
+                <h4 class="text-xl font-black uppercase tracking-widest text-orange-400">Certifications</h4>
+                <div class="space-y-6 flex-grow">
+                    <div class="space-y-3">
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/5">
+                            <p class="text-xs font-bold text-white uppercase tracking-tighter">Amazon AWS</p>
+                            <p class="text-[9px] opacity-40 uppercase mt-1">GenAI Foundations</p>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/5">
+                            <p class="text-xs font-bold text-white uppercase tracking-tighter">Google Cloud</p>
+                            <p class="text-[9px] opacity-40 uppercase mt-1">Generative AI Specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-white/5"><i class="fas fa-certificate text-3xl opacity-20"></i></div>
+            </div>
+            <div class="glass-card p-10 space-y-8 flex flex-col">
+                <h4 class="text-xl font-black uppercase tracking-widest text-emerald-400">Languages</h4>
+                <div class="space-y-8 flex-grow">
+                    <div class="flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5">
+                        <div><p class="text-sm font-bold uppercase tracking-widest">English</p></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-emerald-500"></div>
+                    </div>
+                    <div class="flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5">
+                        <div><p class="text-sm font-bold uppercase tracking-widest">Hindi</p></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-emerald-500"></div>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-white/5"><i class="fas fa-globe text-3xl opacity-20"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="mb-16">
+            <h3 class="text-5xl font-black tracking-tight uppercase">Academic <span class="text-blue-500">Journey</span></h3>
+            <p class="opacity-40 mt-4 uppercase tracking-[0.2em] text-xs font-bold">Past and Present Education</p>
+        </div>
+        <div class="space-y-12">
+            <div class="glass-card p-10 flex flex-col md:flex-row justify-between gap-8 border-l-4 border-blue-500">
+                <div>
+                    <h4 class="text-2xl font-black uppercase">Bachelor of Technology (IT)</h4>
+                    <p class="text-blue-400 font-bold text-sm tracking-widest mt-1">CGC Landran</p>
+                    <p class="opacity-50 mt-4 max-w-xl text-sm leading-relaxed">Focusing on core engineering and Generative AI.</p>
+                </div>
+                <div class="text-right flex flex-col justify-between">
+                    <span class="text-xl font-mono font-bold">2024 — 2028</span>
+                    <span class="badge self-end mt-4">In Progress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="mb-20">
+            <h3 class="text-5xl font-black tracking-tight uppercase">Interactive <span class="text-blue-500">Labs</span></h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass-card group p-12 cursor-pointer flex flex-col justify-between h-[450px]" onclick="openProject('aira')">
+                <div>
+                    <div class="flex justify-between items-center mb-8">
+                        <h4 class="text-3xl font-black uppercase italic">AIRA The Typo</h4>
+                        <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                            <i class="fas fa-arrow-right -rotate-45"></i>
+                        </div>
+                    </div>
+                    <p class="text-lg opacity-50 font-light leading-relaxed mb-6">Advanced typing simulator with TTS feedback.</p>
+                </div>
+                <div class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500">Launch Module</div>
+            </div>
+            <div class="glass-card group p-12 cursor-pointer flex flex-col justify-between h-[450px]" onclick="openProject('expense')">
+                <div>
+                    <div class="flex justify-between items-center mb-8">
+                        <h4 class="text-3xl font-black uppercase italic">Expense Hub</h4>
+                        <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-emerald-600 transition-colors">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                    </div>
+                    <p class="text-lg opacity-50 font-light leading-relaxed mb-6">Financial tracking dashboard.</p>
+                </div>
+                <div class="text-[10px] font-black uppercase tracking-[0.3em] text-emerald-500">Launch Module</div>
+            </div>
+        </div>
+    </section>
+
+    <div id="project-modal" onclick="if(event.target === this) closeProject()">
+        <div class="modal-inner">
+            <button onclick="closeProject()" class="absolute -top-16 right-0 text-white/40 hover:text-white uppercase text-[10px] font-black tracking-widest flex items-center gap-2">
+                Close Module <i class="fas fa-times text-xl"></i>
+            </button>
+            <div id="aira-ui" class="hidden space-y-12">
+                <div class="flex justify-between items-end border-b border-white/5 pb-8">
+                    <h2 class="text-6xl font-black italic tracking-tighter uppercase">AIRA <span class="text-blue-500">Typo</span></h2>
+                    <div class="flex gap-8">
+                        <div class="text-right"><p class="text-[10px] opacity-40 uppercase">Speed</p><p id="wpm" class="text-4xl font-black text-blue-500">0</p></div>
+                        <div class="text-right"><p class="text-[10px] opacity-40 uppercase">Accuracy</p><p id="acc" class="text-4xl font-black text-blue-500">100%</p></div>
+                    </div>
+                </div>
+                <div class="glass-card p-12 border-white/10 relative"><div id="words-display" tabindex="0" class="outline-none">Initializing typing lab...</div></div>
+                <button onclick="startAira()" class="bg-blue-600 px-10 py-4 rounded-2xl font-black uppercase text-xs">Restart Lab</button>
+            </div>
+
+            <div id="expense-ui" class="hidden space-y-10">
+                <div class="flex justify-between items-end border-b border-white/5 pb-8">
+                    <h2 class="text-5xl font-black uppercase">Expense <span class="text-emerald-500">Hub</span></h2>
+                    <p id="total-balance" class="text-5xl font-black text-emerald-400">$0.00</p>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-10">
+                    <div class="glass-card p-8 space-y-4">
+                        <input id="exp-desc" type="text" placeholder="Transaction Name" class="expense-input">
+                        <input id="exp-amount" type="number" placeholder="Amount" class="expense-input">
+                        <select id="exp-cat" class="expense-input"><option value="Food">Food</option><option value="Transport">Transport</option></select>
+                        <button onclick="addExpense()" class="w-full bg-emerald-600 py-4 rounded-2xl font-black text-xs">Add to Ledger</button>
+                    </div>
+                    <div id="transaction-list" class="lg:col-span-2 glass-card max-h-[400px] overflow-y-auto"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="text-center">
+        <div class="glass-card p-20 max-w-4xl mx-auto overflow-hidden relative">
+            <h3 class="text-7xl font-black tracking-tighter uppercase mb-10">Let's craft the <span class="text-gradient">Future</span></h3>
+            <p class="text-xl opacity-40 mb-12">himanshushekhar2nov@gmail.com</p>
+            <a href="mailto:himanshushekhar2nov@gmail.com" class="bg-white text-black px-16 py-6 rounded-full font-black uppercase text-xs">Send Inquiry</a>
+        </div>
+        <footer class="mt-32 opacity-20 text-[9px] font-black tracking-[0.8em] uppercase pb-12">
+            Himanshu Shekhar • MMXXVI
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
